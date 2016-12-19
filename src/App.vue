@@ -11,6 +11,7 @@
         </section>
 
         <simple-confirm></simple-confirm>
+        <confirm-message></confirm-message>
 
         <div class="hero is-primary">
             <div class="hero-body">
@@ -23,6 +24,7 @@
 
 <script>
 import SimpleConfirm from './tutorials/SimpleConfirm';
+import ConfirmMessage from './tutorials/ConfirmMessage';
 export default {
     name: 'app',
     data () {
@@ -32,6 +34,7 @@ export default {
 
     components: {
         SimpleConfirm,
+        ConfirmMessage,
     }
 }
 </script>
