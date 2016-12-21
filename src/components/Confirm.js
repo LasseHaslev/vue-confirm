@@ -1,6 +1,7 @@
 import BaseConfirm from './BaseConfirm';
 export default {
     template: `
+    <span>
         <div class="modal"
              :class="{ 'is-active': isShowingModal }">
             <div class="modal-background" @click="cancel"></div>
@@ -24,6 +25,10 @@ export default {
             </div>
             <button class="modal-close" @click="cancel"></button>
         </div>
+        <span @click="open">
+            <slot></slot>
+        </span>
+    </span>
     `,
 
     mixins: [ BaseConfirm ],

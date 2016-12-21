@@ -6,6 +6,10 @@ export default {
             type: String,
             default: 'Are you sure?',
         },
+        'auto-close': {
+            type: Boolean,
+            default: false,
+        }
     },
 
     data() {
@@ -23,7 +27,9 @@ export default {
         confirm() {
             this.isConfirmLoading = true;
             this.$emit( 'confirm' )
-            // this.close();
+            if (this.autoClose) {
+                this.close();
+            }
         },
         cancel() {
             this.$emit( 'cancel' )

@@ -12,6 +12,7 @@
 
         <simple-confirm></simple-confirm>
         <confirm-message></confirm-message>
+        <simple-cover-confirm></simple-cover-confirm>
 
         <div class="hero is-primary">
             <div class="hero-body">
@@ -24,6 +25,7 @@
 
 <script>
 import SimpleConfirm from './tutorials/SimpleConfirm';
+import SimpleCoverConfirm from './tutorials/SimpleCoverConfirm';
 import ConfirmMessage from './tutorials/ConfirmMessage';
 export default {
     name: 'app',
@@ -34,6 +36,7 @@ export default {
 
     components: {
         SimpleConfirm,
+        SimpleCoverConfirm,
         ConfirmMessage,
     }
 }
