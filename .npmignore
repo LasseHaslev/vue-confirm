@@ -3,6 +3,4 @@ webpack.config.js
 yarn.lock
 node_modules/
 
-src/tutorials/
-src/App.vue
-src/main.js
+src/
